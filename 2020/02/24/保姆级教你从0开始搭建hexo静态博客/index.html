@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>保姆级教你从0开始搭建hexo静态博客 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="date: 2020-02-24 15:17:27前言：新手小白的第一个blog，先简单搭建起来，之后大家也可以自己考虑美观，页面内容等问题。各位自行搭建过程中可能会出现一些问题，但是不必畏惧，网上关于hexo有很多健全的搭建教程和问题解决方案。大家勇于百度勇于重来，加油，奥利给。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="保姆级教你从0开始搭建hexo静态博客">
+<meta property="og:url" content="http://yoursite.com/2020/02/24/%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E4%BD%A0%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BAhexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="date: 2020-02-24 15:17:27前言：新手小白的第一个blog，先简单搭建起来，之后大家也可以自己考虑美观，页面内容等问题。各位自行搭建过程中可能会出现一些问题，但是不必畏惧，网上关于hexo有很多健全的搭建教程和问题解决方案。大家勇于百度勇于重来，加油，奥利给。">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/images/blog.png">
+<meta property="og:image" content="http://yoursite.com/images/%E5%90%AF%E5%8A%A8.png">
+<meta property="og:image" content="http://yoursite.com/images/%E6%94%B9%E7%AB%AF%E5%8F%A3.png">
+<meta property="og:image" content="http://yoursite.com/images/%E4%B8%BB%E9%A1%B5.jpg">
+<meta property="og:image" content="http://yoursite.com/images/%E8%8F%9C%E9%B8%9F%E5%8D%9A%E5%AE%A2.png">
+<meta property="og:image" content="http://yoursite.com/images/%E6%9F%A5%E7%9C%8B.png">
+<meta property="og:image" content="http://yoursite.com/images/%E6%96%B0%E5%BB%BA.png">
+<meta property="og:image" content="http://yoursite.com/images/git%E6%8F%92%E4%BB%B6.png">
+<meta property="og:image" content="http://yoursite.com/images/config.jpg">
+<meta property="og:image" content="http://yoursite.com/images/%E9%83%A8%E7%BD%B2.png">
+<meta property="og:image" content="http://yoursite.com/images/%E5%8F%91%E5%B8%83.png">
+<meta property="article:published_time" content="2020-02-24T07:17:27.648Z">
+<meta property="article:modified_time" content="2020-02-26T03:36:52.496Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/images/blog.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-保姆级教你从0开始搭建hexo静态博客" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/02/24/%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E4%BD%A0%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BAhexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/" class="article-date">
+  <time datetime="2020-02-24T07:17:27.648Z" itemprop="datePublished">2020-02-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      保姆级教你从0开始搭建hexo静态博客
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<p>date: 2020-02-24 15:17:27<br>前言：新手小白的第一个blog，先简单搭建起来，之后大家也可以自己考虑美观，页面内容等问题。各位自行搭建过程中可能会出现一些问题，但是不必畏惧，网上关于hexo有很多健全的搭建教程和问题解决方案。大家勇于百度勇于重来，加油，奥利给。</p>
+<a id="more"></a>
+<h2 id="一、搭建环境"><a href="#一、搭建环境" class="headerlink" title="一、搭建环境"></a>一、搭建环境</h2><h4 id="1、安装NodeJs"><a href="#1、安装NodeJs" class="headerlink" title="1、安装NodeJs"></a>1、安装NodeJs</h4><p>&nbsp;  下载地址：<a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a> (可下载LTS长期支持版)<br>&nbsp;  安装过程一直next就好啦<br>&nbsp;  <strong>win+r</strong> 键输入cmd调出命令提示符,输入<strong>node -v</strong> 能查看到版本号即安装成功</p>
+<h4 id="2、安装Git"><a href="#2、安装Git" class="headerlink" title="2、安装Git"></a>2、安装Git</h4><p>&nbsp;  官网下载地址：<a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a><br>&nbsp;  tips:官网下载速度很慢可以在淘宝的一个镜像的网站中下载<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://npm.taobao.org/mirrors/git-for-windows/" target="_blank" rel="noopener">https://npm.taobao.org/mirrors/git-for-windows/</a><br>&nbsp; 下载完打开输入<strong>git version</strong> 查看是否安装成功</p>
+<h2 id="二、安装hexo"><a href="#二、安装hexo" class="headerlink" title="二、安装hexo"></a>二、安装hexo</h2><p>&nbsp; 由于国内镜像源安装速度慢,借助npm装一个淘宝的源,输入<strong>npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a></strong> 等待安装<br>&nbsp; 输入<strong>cnpm install -g hexo-cli</strong> 安装hexo<br>&nbsp; 输入<strong>hexo -v</strong> 查看版本号验证是否安装成功,之后就可以开始正式搭建博客啦</p>
+<h2 id="三、搭建博客"><a href="#三、搭建博客" class="headerlink" title="三、搭建博客"></a>三、搭建博客</h2><h4 id="1、新建博客存储文件夹"><a href="#1、新建博客存储文件夹" class="headerlink" title="1、新建博客存储文件夹"></a>1、新建博客存储文件夹</h4><p>&nbsp; 建立一个文件夹 <strong>mkdir blog</strong> ,且初始化博客输入<strong>hexo init</strong> 等待一段时间完成后就可以在自己创建的位置看到该文件<br><img src="/images/blog.png" alt=""></p>
+<h4 id="2、启动博客"><a href="#2、启动博客" class="headerlink" title="2、启动博客"></a>2、启动博客</h4><p>&nbsp; 输入<strong>hexo s</strong><br><img src="/images/%E5%90%AF%E5%8A%A8.png" alt=""> 即可在浏览器中访问默认链接<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>, 但由于我的端口被占用，所以启动时设置其他端口<br><img src="/images/%E6%94%B9%E7%AB%AF%E5%8F%A3.png" alt=""><br>浏览器中启动效果图<br><img src="/images/%E4%B8%BB%E9%A1%B5.jpg" alt=""></p>
+<h4 id="3、新建文章"><a href="#3、新建文章" class="headerlink" title="3、新建文章"></a>3、新建文章</h4><p>&nbsp; 输入执行 <strong>hexo n “菜鸟博客”</strong><br><img src="/images/%E8%8F%9C%E9%B8%9F%E5%8D%9A%E5%AE%A2.png" alt=""><br>进入该文章目录 <strong>cd source/_posts/</strong></p>
+<h2 id="四、编写博客"><a href="#四、编写博客" class="headerlink" title="四、编写博客"></a>四、编写博客</h2><h4 id="1、输入vim-“菜鸟博客”"><a href="#1、输入vim-“菜鸟博客”" class="headerlink" title="1、输入vim “菜鸟博客”"></a>1、输入vim “菜鸟博客”</h4><p>&nbsp; 编写文章的技巧网上有很多，完成之后<strong>esc+:wq</strong> 保存退出</p>
+<h4 id="2、编译器编译"><a href="#2、编译器编译" class="headerlink" title="2、编译器编译"></a>2、编译器编译</h4><p>&nbsp; 个人觉得vim上手有点难受:) 一键右击用sublime打开编辑</p>
+<h2 id="五、浏览器中查看文章"><a href="#五、浏览器中查看文章" class="headerlink" title="五、浏览器中查看文章"></a>五、浏览器中查看文章</h2><p>&nbsp; 回退到blog目录 <strong>cd ../..</strong><br>&nbsp; <strong>hexo clean</strong> 清除缓存文件和已生成的静态文件<br>&nbsp; <strong>hexo g</strong> 生成静态网页<br>&nbsp; <strong>hexo s</strong> 再次启动<br><img src="/images/%E6%9F%A5%E7%9C%8B.png" alt=""><br>&nbsp; 在浏览器刷新就可以看到自己写的文章辽</p>
+<h2 id="六、将博客部署到GitHub上"><a href="#六、将博客部署到GitHub上" class="headerlink" title="六、将博客部署到GitHub上"></a>六、将博客部署到GitHub上</h2><h4 id="1、在github上新建一个仓库（仓库名格式为-github名-github-io）"><a href="#1、在github上新建一个仓库（仓库名格式为-github名-github-io）" class="headerlink" title="1、在github上新建一个仓库（仓库名格式为 github名.github.io）"></a>1、在github上新建一个仓库（仓库名格式为 github名.github.io）</h4><p><img src="/images/%E6%96%B0%E5%BB%BA.png" alt=""></p>
+<h4 id="2、打开git的命令行-在blog目录下装一个git部署插件执行-cnpm-install-–save-hexo-deployer-git"><a href="#2、打开git的命令行-在blog目录下装一个git部署插件执行-cnpm-install-–save-hexo-deployer-git" class="headerlink" title="2、打开git的命令行,在blog目录下装一个git部署插件执行 cnpm install –save hexo-deployer-git"></a>2、打开git的命令行,在blog目录下装一个git部署插件执行 <strong>cnpm install –save hexo-deployer-git</strong></h4><p><img src="/images/git%E6%8F%92%E4%BB%B6.png" alt=""></p>
+<h4 id="3、输入命令行-vim-config-yml"><a href="#3、输入命令行-vim-config-yml" class="headerlink" title="3、输入命令行 vim _config.yml"></a>3、输入命令行 <strong>vim _config.yml</strong></h4><p>&nbsp; 在文件的最下面输入如下：<br><img src="/images/config.jpg" alt=""></p>
+<h4 id="4、部署到远端-hexo-d"><a href="#4、部署到远端-hexo-d" class="headerlink" title="4、部署到远端 hexo d"></a>4、部署到远端 hexo d</h4><p>&nbsp; <strong>注意：</strong> 此步骤需要输入git的账号和密码，需要设置git的global。完成之后刷新github,可以看到自己博生成的内容(如下图)<br><img src="/images/%E9%83%A8%E7%BD%B2.png" alt=""></p>
+<h4 id="5、在浏览器地址栏输入你的仓库名查看是否成功"><a href="#5、在浏览器地址栏输入你的仓库名查看是否成功" class="headerlink" title="5、在浏览器地址栏输入你的仓库名查看是否成功"></a>5、在浏览器地址栏输入你的仓库名查看是否成功</h4><p><img src="/images/%E5%8F%91%E5%B8%83.png" alt=""></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/02/24/%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E4%BD%A0%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BAhexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/" data-id="ck72ry2y90001acueasbjal87" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2020/02/24/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/02/24/%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E4%BD%A0%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BAhexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/">保姆级教你从0开始搭建hexo静态博客</a>
+          </li>
+        
+          <li>
+            <a href="/2020/02/24/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
