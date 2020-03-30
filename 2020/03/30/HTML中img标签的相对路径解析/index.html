@@ -21,26 +21,36 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="小孙同学">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="每次添加图片时都因为图片位置不同加载不出？那首先我们要明白相对路径是怎么回事,相对路径即相对于某个基准目录的路径,在我们插入图片时我们要清楚要插入的位置和图片位置是怎样的关系,让我来给大家举个栗子叭上面是我的测试目录，忽略其他的一些文件夹，来看测试的目录结构如下图 1、测试点在test.html下，插入1.jpg。由下图可见测试点和图片在同一目录(全屏相册案例)下，这时路径为：&lt; img">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML中img标签的相对路径解析">
+<meta property="og:url" content="http://yoursite.com/2020/03/30/HTML%E4%B8%ADimg%E6%A0%87%E7%AD%BE%E7%9A%84%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E8%A7%A3%E6%9E%90/index.html">
 <meta property="og:site_name" content="小孙同学">
+<meta property="og:description" content="每次添加图片时都因为图片位置不同加载不出？那首先我们要明白相对路径是怎么回事,相对路径即相对于某个基准目录的路径,在我们插入图片时我们要清楚要插入的位置和图片位置是怎样的关系,让我来给大家举个栗子叭上面是我的测试目录，忽略其他的一些文件夹，来看测试的目录结构如下图 1、测试点在test.html下，插入1.jpg。由下图可见测试点和图片在同一目录(全屏相册案例)下，这时路径为：&lt; img">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/images/%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E8%A7%A3%E6%9E%90/%E7%9B%AE%E5%BD%95.png">
+<meta property="og:image" content="http://yoursite.com/images/%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E8%A7%A3%E6%9E%90/%E7%BB%93%E6%9E%84%E5%9B%BE.png">
+<meta property="og:image" content="http://yoursite.com/images/%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E8%A7%A3%E6%9E%90/%E4%B8%8A%E4%B8%80%E7%BA%A7.png">
+<meta property="og:image" content="http://yoursite.com/images/%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E8%A7%A3%E6%9E%90/%E4%B8%8A%E4%B8%8A%E7%BA%A7.png">
+<meta property="og:image" content="http://yoursite.com/images/%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E8%A7%A3%E6%9E%90/%E4%B8%8A%E4%B8%8A%E4%B8%8A%E7%BA%A7.png">
+<meta property="article:published_time" content="2020-03-30T08:33:38.715Z">
+<meta property="article:modified_time" content="2020-03-30T09:41:12.606Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/images/%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E8%A7%A3%E6%9E%90/%E7%9B%AE%E5%BD%95.png">
 
-<link rel="canonical" href="http://yoursite.com/">
+<link rel="canonical" href="http://yoursite.com/2020/03/30/HTML%E4%B8%ADimg%E6%A0%87%E7%AD%BE%E7%9A%84%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E8%A7%A3%E6%9E%90/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: true,
-    isPost: false
+    isHome: false,
+    isPost: true
   };
 </script>
 
-  <title>小孙同学</title>
+  <title>HTML中img标签的相对路径解析 | 小孙同学</title>
   
 
 
@@ -156,10 +166,10 @@
             
 
   <div class="posts-expand">
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/30/HTML%E4%B8%ADimg%E6%A0%87%E7%AD%BE%E7%9A%84%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E8%A7%A3%E6%9E%90/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -173,8 +183,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/03/30/HTML%E4%B8%ADimg%E6%A0%87%E7%AD%BE%E7%9A%84%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E8%A7%A3%E6%9E%90/" class="post-title-link" itemprop="url">HTML中img标签的相对路径解析</a>
+          HTML中img标签的相对路径解析
         </h1>
 
         <div class="post-meta">
@@ -199,7 +208,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <hr>
+        <hr>
 <p>每次添加图片时都因为图片位置不同加载不出？那首先我们要明白相对路径是怎么回事,相对路径即相对于某个基准目录的路径,在我们插入图片时我们要清楚要插入的位置和图片位置是怎样的关系,让我来给大家举个栗子叭<br><img src="/images/%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E8%A7%A3%E6%9E%90/%E7%9B%AE%E5%BD%95.png" alt=""><br>上面是我的测试目录，忽略其他的一些文件夹，来看测试的目录结构如下图<br><img src="/images/%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E8%A7%A3%E6%9E%90/%E7%BB%93%E6%9E%84%E5%9B%BE.png" alt=""></p>
 <h5 id="1、测试点在test-html下，插入1-jpg。由下图可见测试点和图片在同一目录-全屏相册案例-下，这时路径为：-lt-img-src-”1-jpg”-alt-”图片加载错误”-gt"><a href="#1、测试点在test-html下，插入1-jpg。由下图可见测试点和图片在同一目录-全屏相册案例-下，这时路径为：-lt-img-src-”1-jpg”-alt-”图片加载错误”-gt" class="headerlink" title="1、测试点在test.html下，插入1.jpg。由下图可见测试点和图片在同一目录(全屏相册案例)下，这时路径为：&lt; img src=”1.jpg” alt=”图片加载错误”&gt;"></a>1、测试点在test.html下，插入1.jpg。由下图可见测试点和图片在同一目录(全屏相册案例)下，这时路径为：&lt; img src=”1.jpg” alt=”图片加载错误”&gt;</h5><p>![](/images/相对路径解析/ 同级.png)</p>
 <h5 id="2、测试点在test-html下，插入2-jpg。由下图可见图片在测试点的上一级目录-案例-下，这时路径为：-lt-img-src-”-2-jpg”-alt-”图片加载错误”-gt"><a href="#2、测试点在test-html下，插入2-jpg。由下图可见图片在测试点的上一级目录-案例-下，这时路径为：-lt-img-src-”-2-jpg”-alt-”图片加载错误”-gt" class="headerlink" title="2、测试点在test.html下，插入2.jpg。由下图可见图片在测试点的上一级目录(案例)下，这时路径为：&lt; img src=”../2.jpg” alt=”图片加载错误”&gt;"></a>2、测试点在test.html下，插入2.jpg。由下图可见图片在测试点的上一级目录(案例)下，这时路径为：&lt; img src=”../2.jpg” alt=”图片加载错误”&gt;</h5><p><img src="/images/%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E8%A7%A3%E6%9E%90/%E4%B8%8A%E4%B8%80%E7%BA%A7.png" alt=""></p>
@@ -207,97 +216,33 @@
 <h5 id="4、测试点在test-html下，插入3-jpg。由下图可见图片在测试点的上上上级目录-前端-下，这时路径为：-lt-img-src-”-4-jpg”-alt-”图片加载错误”-gt"><a href="#4、测试点在test-html下，插入3-jpg。由下图可见图片在测试点的上上上级目录-前端-下，这时路径为：-lt-img-src-”-4-jpg”-alt-”图片加载错误”-gt" class="headerlink" title="4、测试点在test.html下，插入3.jpg。由下图可见图片在测试点的上上上级目录(前端)下，这时路径为：&lt; img src=”../../../4.jpg” alt=”图片加载错误”&gt;"></a>4、测试点在test.html下，插入3.jpg。由下图可见图片在测试点的上上上级目录(前端)下，这时路径为：&lt; img src=”../../../4.jpg” alt=”图片加载错误”&gt;</h5><p><img src="/images/%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E8%A7%A3%E6%9E%90/%E4%B8%8A%E4%B8%8A%E4%B8%8A%E7%BA%A7.png" alt=""></p>
 <h4 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h4><p>同一级的src为./x.jpg或者x.jpg<br>上一级为../x.jpg ,上多少层就有多少../</p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
         
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/24/%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E4%BD%A0%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BAhexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/%E5%A4%B4%E5%83%8F3.jpg">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小孙同学">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/02/24/%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E4%BD%A0%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BAhexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">保姆级教你从0开始搭建hexo静态博客</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-02-24 15:17:27" itemprop="dateCreated datePublished" datetime="2020-02-24T15:17:27+08:00">2020-02-24</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-02-26 23:29:55" itemprop="dateModified" datetime="2020-02-26T23:29:55+08:00">2020-02-26</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <hr>
-<p>前言：新手小白的第一个blog，先简单搭建起来，之后大家也可以自己考虑美观，页面内容等问题。各位自行搭建过程中可能会出现一些问题，但是不必畏惧，网上关于hexo有很多健全的搭建教程和问题解决方案。大家勇于百度勇于重来，加油，奥利给。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/02/24/%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E4%BD%A0%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BAhexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/02/24/%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E4%BD%A0%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BAhexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/" rel="prev" title="保姆级教你从0开始搭建hexo静态博客">
+      <i class="fa fa-chevron-left"></i> 保姆级教你从0开始搭建hexo静态博客
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
   
 
   </div>
-
-  
-
 
 
           </div>
@@ -348,6 +293,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#1、测试点在test-html下，插入1-jpg。由下图可见测试点和图片在同一目录-全屏相册案例-下，这时路径为：-lt-img-src-”1-jpg”-alt-”图片加载错误”-gt"><span class="nav-number">1.</span> <span class="nav-text">1、测试点在test.html下，插入1.jpg。由下图可见测试点和图片在同一目录(全屏相册案例)下，这时路径为：&lt; img src&#x3D;”1.jpg” alt&#x3D;”图片加载错误”&gt;</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2、测试点在test-html下，插入2-jpg。由下图可见图片在测试点的上一级目录-案例-下，这时路径为：-lt-img-src-”-2-jpg”-alt-”图片加载错误”-gt"><span class="nav-number">2.</span> <span class="nav-text">2、测试点在test.html下，插入2.jpg。由下图可见图片在测试点的上一级目录(案例)下，这时路径为：&lt; img src&#x3D;”..&#x2F;2.jpg” alt&#x3D;”图片加载错误”&gt;</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3、测试点在test-html下，插入3-jpg。由下图可见图片在测试点的上上级目录-JQuery-下，这时路径为：-lt-img-src-”-3-jpg”-alt-”图片加载错误”-gt"><span class="nav-number">3.</span> <span class="nav-text">3、测试点在test.html下，插入3.jpg。由下图可见图片在测试点的上上级目录(JQuery)下，这时路径为：&lt; img src&#x3D;”..&#x2F;..&#x2F;3.jpg” alt&#x3D;”图片加载错误”&gt;</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4、测试点在test-html下，插入3-jpg。由下图可见图片在测试点的上上上级目录-前端-下，这时路径为：-lt-img-src-”-4-jpg”-alt-”图片加载错误”-gt"><span class="nav-number">4.</span> <span class="nav-text">4、测试点在test.html下，插入3.jpg。由下图可见图片在测试点的上上上级目录(前端)下，这时路径为：&lt; img src&#x3D;”..&#x2F;..&#x2F;..&#x2F;4.jpg” alt&#x3D;”图片加载错误”&gt;</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#总结："><span class="nav-number"></span> <span class="nav-text">总结：</span></a></div>
       </div>
       <!--/noindex-->
 
