@@ -1,2 +1,3 @@
 # SUNXIHUI.github.io
-我的hexo博客
+1、搭建hexo博客
+2、关于src的相对路径与绝对路径
